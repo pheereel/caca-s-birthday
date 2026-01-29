@@ -14,3 +14,5 @@ function playmusic() {
       icon.classList.add("fa-play");
     }
 }
+
+lagu.addEventListener("click", playmusic)
