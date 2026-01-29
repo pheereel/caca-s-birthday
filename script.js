@@ -1,7 +1,7 @@
 const lagu = document.querySelector('#mySong')
 const button = document.querySelector('#ctrlIcon')
 
-function playmusic () {
+function playmusic() {
     if (song.paused) {
       song.play();
       // Ganti ikon ke Pause
