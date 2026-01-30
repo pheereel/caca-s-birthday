@@ -1,4 +1,4 @@
-const lagu = new Audio('/audio/tulus.mp3')
+const lagu = new Audio('./audio/tulus.mp3')
 const button = document.querySelector('#ctrlIcon')
 
 function playmusic() {
