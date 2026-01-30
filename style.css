@@ -1,8 +1,10 @@
+
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
 body {
@@ -29,7 +31,8 @@ body {
 }
 
 .hero {
-  font-family: "Quicksand";
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
   height: 100vh;
   background: url("birthday.jpg") center / cover no-repeat;
   position: relative;
