@@ -1,18 +1,19 @@
 const lagu = new Audio('./audio/tulus.mp3')
+const spotifybutton = document.querySelector('.spotify-btn')
 const button = document.querySelector('#ctrlIcon')
 
 function playmusic() {
     if (lagu.paused) {
       lagu.play();
       // Ganti ikon ke Pause
-      icon.classList.remove("fa-play");
-      icon.classList.add("fa-pause");
+      button.classList.remove("fa-play");
+      button.classList.add("fa-pause");
     } else {
       lagu.pause();
       // Ganti ikon balik ke Play
-      icon.classList.remove("fa-pause");
-      icon.classList.add("fa-play");
+      button.classList.remove("fa-pause");
+      button.classList.add("fa-play");
     }
 }
 
-button.addEventListener("click", playmusic)
+spotifybutton.addEventListener("click", playmusic)
