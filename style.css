@@ -10,22 +10,25 @@ body {
 }
 
 .nav {
-  position: fixed;
-  top: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
-  padding: 16px 32px;
-  display: flex;
-  justify-content: space-between;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(6px);
-  z-index: 10;
+  position: fixed; /* Kunci di layar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background: rgba(0, 0, 0, 0.4); /* Glassmorphism */
+    backdrop-filter: blur(10px);
+    z-index: 1000; /* Angka tinggi supaya di atas polaroid */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 20px;
+   color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
 }
 
 .hero {
@@ -224,19 +227,25 @@ body {
 /* LETTER HTML */
 
 .nav2 {
-  top: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
-  padding: 16px 32px;
-  display: flex;
-  justify-content: space-between;
-  background: rgb(25, 25, 25);
+  position: fixed; /* Kunci di layar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background: rgba(0, 0, 0, 0.4); /* Glassmorphism */
+    backdrop-filter: blur(10px);
+    z-index: 1000; /* Angka tinggi supaya di atas polaroid */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav2 a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 20px;
+   color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
 }
 
 .letter {
@@ -412,18 +421,41 @@ blockquote {
     }
 }
 
+/* Pastikan Navigasi Selalu di Atas */
 .nav3 {
-  top: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
-  padding: 16px 32px;
-  display: flex;
-  justify-content: space-between;
-  background: rgb(25, 25, 25);
+    position: fixed; /* Kunci di layar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background: rgba(0, 0, 0, 0.4); /* Glassmorphism */
+    backdrop-filter: blur(10px);
+    z-index: 1000; /* Angka tinggi supaya di atas polaroid */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav3 a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+/* Supaya konten di bawah nav nggak ketutup */
+.photo {
+    padding-top: 100px; /* Jarak agar polaroid gak nabrak nav */
+    display: block; /* Kembalikan ke block agar nav gak ikut jadi kolom */
+}
+
+/* Container polaroid tetep pakai flex/grid tapi di dalem body */
+.polaroidcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto; /* Tengahin container */
+    padding: 20px;
 }
