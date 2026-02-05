@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #111;
+  background: #70635e;
   color: #fff;
 }
 
@@ -66,10 +66,11 @@ body {
 
 .section1 {
   padding: 100px 32px;
-  max-width: 800px;
+  width: 100%;
   margin: auto;
   font-family: 'Montserrat';
   display: flex;
+  justify-content: center;
   background-color: #70635e;
 }
 
@@ -111,13 +112,6 @@ body {
     transition: transform 0.2s, background-color 0.2s;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   }
-
-.gambar {
-  width: 300px;  /* Sesuaikan ukuran */
-  height: 300px; /* Harus sama dengan width agar 1:1 */
-  object-fit: cover; /* Ini kuncinya agar foto terpotong rapi di tengah */
-  border-radius: 8px; /* Opsional: sedikit melengkung ala Spotify */
-}
 
 .album-container {
   display: flex;
