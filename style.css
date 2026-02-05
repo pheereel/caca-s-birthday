@@ -70,6 +70,7 @@ body {
   max-width: 800px;
   margin: auto;
   font-family: "Flow Circular";
+  display: flex;
 }
 
 .section h2 {
@@ -120,4 +121,49 @@ body {
   height: 300px; /* Harus sama dengan width agar 1:1 */
   object-fit: cover; /* Ini kuncinya agar foto terpotong rapi di tengah */
   border-radius: 8px; /* Opsional: sedikit melengkung ala Spotify */
+}
+
+.album-container {
+  display: flex;
+  flex-direction: column; /* Menyusun isi ke bawah (Header lalu Tombol) */
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Bagian Atas: Foto di kiri, Judul di kanan */
+.album-header {
+  display: flex;
+  align-items: flex-end; /* Judul sejajar dengan bagian bawah foto */
+  gap: 20px;
+}
+
+.albumcover {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+
+.juduldiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.judul {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #b3b3b3; /* Abu-abu ala Spotify */
+  margin-top: 5px;
+}
+
+/* Tombol di bawah gambar */
+.buttondiv {
+  padding-left: 10px; /* Sedikit geser agar pas di bawah foto */
 }
