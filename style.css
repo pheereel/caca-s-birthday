@@ -35,7 +35,6 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
   height: 100vh;
-  background: url("birthday.jpg") center / cover no-repeat;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -65,12 +64,13 @@ body {
   margin-bottom: 12px;
 }
 
-.section {
+.section1 {
   padding: 100px 32px;
   max-width: 800px;
   margin: auto;
-  font-family: "Flow Circular";
-  display: flex;
+  font-family: 'Montserrat';
+  dissplay: flex;
+  background-color: #70635e;
 }
 
 .section h2 {
@@ -111,10 +111,6 @@ body {
     transition: transform 0.2s, background-color 0.2s;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   }
-
-.section {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 .gambar {
   width: 300px;  /* Sesuaikan ukuran */
@@ -158,6 +154,9 @@ body {
   margin: 0;
   font-weight: 800;
   letter-spacing: -2px;
+  color: #FFFFFF;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
 }
 
 .date {
@@ -167,3 +166,64 @@ body {
   color: #ffffff;
 }
 /* Tombol di bawah gambar */
+
+/* Container Utama */
+.lyrics-container {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.lyric-box {
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Styling Lirik (Quotes) */
+.lyric-quote p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2.2rem; /* Ukuran besar ala Spotify Lyrics */
+  line-height: 1.2;
+  color: #F2E8DF; /* Krem matahari */
+  margin-bottom: 40px;
+  letter-spacing: -1px;
+  transition: 0.3s;
+}
+
+/* Hover effect agar lirik menyala saat didekati */
+.lyric-quote p:hover {
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(242, 232, 223, 0.5);
+}
+
+/* Styling Pesan Personal (Paragraph) */
+.personal-message {
+  background: rgba(255, 255, 255, 0.05); /* Efek kaca tipis */
+  padding: 30px;
+  background-color: #847873;
+  border-left: 4px solid #b6a59e; /* Garis aksen warna terracotta */
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.personal-message p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d9d2ce; /* Abu-abu hangat */
+  font-style: italic;
+}
+
+.personal-message strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.personal-message span {
+  display: block;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #323432; /* Hijau Spotify untuk penutup */
+}
