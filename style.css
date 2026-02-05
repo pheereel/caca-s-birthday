@@ -69,6 +69,7 @@ body {
   padding: 100px 32px;
   max-width: 800px;
   margin: auto;
+  font-family: "Flow Circular";
 }
 
 .section h2 {
@@ -112,4 +113,11 @@ body {
 
 .section {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.gambar {
+  width: 300px;  /* Sesuaikan ukuran */
+  height: 300px; /* Harus sama dengan width agar 1:1 */
+  object-fit: cover; /* Ini kuncinya agar foto terpotong rapi di tengah */
+  border-radius: 8px; /* Opsional: sedikit melengkung ala Spotify */
 }
