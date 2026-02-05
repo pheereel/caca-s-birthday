@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #70635e;
+  background: #212221;
   color: #fff;
 }
 
@@ -71,7 +71,7 @@ body {
   font-family: 'Montserrat';
   display: flex;
   justify-content: center;
-  background-color: #212221;
+  background-color: #70635e;
   padding-bottom: 10px;
 }
 
@@ -206,12 +206,12 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #d9d2ce; /* Abu-abu hangat */
+  color: #282727; /* Abu-abu hangat */
   font-style: italic;
 }
 
 .personal-message strong {
-  color: #ffffff;
+  color: #f4efef;
   font-weight: 600;
 }
 
@@ -220,5 +220,5 @@ body {
   margin-top: 20px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: #323432; /* Hijau Spotify untuk penutup */
+  color: #ffffff; /* Hijau Spotify untuk penutup */
 }
