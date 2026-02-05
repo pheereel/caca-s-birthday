@@ -125,45 +125,45 @@ body {
 
 .album-container {
   display: flex;
-  flex-direction: column; /* Menyusun isi ke bawah (Header lalu Tombol) */
-  gap: 20px;
-  max-width: 600px;
-  margin: 0 auto;
+  flex-direction: column; /* Menyusun Header dan Tombol secara vertikal */
+  gap: 15px;
+  padding: 20px;
 }
 
-/* Bagian Atas: Foto di kiri, Judul di kanan */
+/* Header: Mengatur Foto di Kiri dan Teks di Kanan */
 .album-header {
   display: flex;
-  align-items: flex-end; /* Judul sejajar dengan bagian bawah foto */
-  gap: 20px;
+  flex-direction: row; /* Kuncinya di sini: elemen berjejer ke samping */
+  align-items: flex-end; /* Membuat teks sejajar dengan bagian bawah foto */
+  gap: 25px; /* Jarak antara foto dan teks */
 }
 
 .albumcover {
-  width: 200px;
-  height: 200px;
+  width: 230px;
+  height: 230px;
   object-fit: cover;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
 
+/* Teks (Judul & Tanggal) menyusun ke bawah di sisi kanan foto */
 .juduldiv {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
 
 .judul {
-  font-size: 3rem;
+  font-size: 4rem; /* Ukuran besar ala Spotify */
   margin: 0;
-  font-weight: bold;
+  font-weight: 800;
+  letter-spacing: -2px;
 }
 
 .date {
   font-size: 0.9rem;
-  color: #b3b3b3; /* Abu-abu ala Spotify */
-  margin-top: 5px;
+  font-weight: 500;
+  margin: 10px 0 0 0;
+  color: #ffffff;
 }
-
 /* Tombol di bawah gambar */
-.buttondiv {
-  padding-left: 10px; /* Sedikit geser agar pas di bawah foto */
-}
