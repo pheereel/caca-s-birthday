@@ -459,3 +459,86 @@ blockquote {
     margin: 0 auto; /* Tengahin container */
     padding: 20px;
 }
+
+.section1 {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #121212; /* Hitam Spotify */
+    display: flex;
+    flex-direction: column;
+}
+
+#laguloop {
+    flex-grow: 1; /* Mengambil sisa ruang layar */
+    width: 100%;
+    border: none;
+}
+
+/* Spotify Player Bar di Bawah */
+.album-container {
+    height: 90px;
+    background-color: #181818;
+    border-top: 1px solid #282828;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.album-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 180px;
+}
+
+.albumcover {
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.juduldiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.bar-title {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.bar-artist {
+    color: #b3b3b3;
+    font-size: 0.8rem;
+}
+
+.play-btn-circle {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.play-btn-circle:hover {
+    transform: scale(1.1);
+}
+
+.play-btn-circle i {
+    color: #000;
+    font-size: 14px;
+}
